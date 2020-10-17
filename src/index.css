@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background:#ded9d9;height: 100%;
+}
+html{
+  height: 100%;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.container{
+  height: 100%;
+}
+#root{
+  height: 100%;
+}
+.backButton, .addButton{
+  top: 0;
+    left: 0;
+    background: #4b00fb;
+    color: white;
+    padding: 15px;
+    opacity: 0.5;
+    border: none;
+    position: fixed;
+    z-index: 1000;
+    transition: 1s;
+    cursor: pointer;
+}
+.backButton:hover,.addButton:hover{
+  opacity: 1;
+}
+
+.addButton{
+  top: 0 !important;
+  right: 0 !important;
+  left: unset;
+}
+
+.addButton.empty{
+  background: red;
+
+}
+.addButton.empty:hover{
+  opacity: 0.5;
+}
+.addButton.empty:hover:after{
+  opacity: 0.5;
+  content:" (You need to fill all the inputs!)";
+}
+

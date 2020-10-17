@@ -1,0 +1,72 @@
+.bottomContent{
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.detailsBox{
+    color:white;
+    text-align: center;
+}
+.box{
+    flex:0 0 calc(50% - 34px);
+    padding: 15px;
+    background: #61dafb;
+    overflow: hidden;
+    position: relative;
+    min-height: 250px;
+    background-size: cover;
+    text-align:left;
+    min-height: 50%;
+    height: 50%;
+}
+.box.odd{
+    background:#44adca;
+}
+h5{
+    text-align: right;
+    color: white;
+    font-size: 15px;
+    margin-top: 0px;
+}
+.imgBox{
+    transform: rotate(20deg);
+    margin-right: -100px;
+    border-radius: 100%;
+}
+
+.foundOutMore{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    margin-left: -7px;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: 2s;
+    
+}
+.foundOutMore:hover{
+    background: white;
+    padding: 15px;
+    color:black;
+}
+.boxSummary{
+    outline: none;
+    margin-bottom: 5px;
+    color:white;
+    text-align: center;
+}
+
+@media only screen and (max-width: 602px) {
+    .box{
+        flex:0 0 calc(100% - 35px);
+    }
+  }
+  
+

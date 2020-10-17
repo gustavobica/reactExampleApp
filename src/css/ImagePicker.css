@@ -1,0 +1,10 @@
+.imgSelectionItem{
+    flex:0 0 16%;
+    cursor:pointer;
+}
+.imgSelectionItem:hover{
+    border:solid 1px blue;
+}
+.gallery{
+    text-align: center;
+}
